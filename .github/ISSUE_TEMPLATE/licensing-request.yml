@@ -1,0 +1,45 @@
+name: Licensing or permission request
+description: Request review for commercial use, redistribution, adaptation, or asset use.
+title: "Licensing request: "
+labels:
+  - licensing-request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Submitting this form does not grant permission, promise approval, establish exclusivity, or guarantee a response time. This intake is not legal advice.
+  - type: input
+    id: requester
+    attributes:
+      label: Requester identity and contact
+    validations:
+      required: true
+  - type: input
+    id: project
+    attributes:
+      label: Northline project and requested material
+    validations:
+      required: true
+  - type: textarea
+    id: use
+    attributes:
+      label: Intended use
+      description: Describe distribution, adaptation, platforms, territories, duration, monetization, and modifications.
+    validations:
+      required: true
+  - type: input
+    id: deadline
+    attributes:
+      label: Requested decision date
+  - type: textarea
+    id: confidential
+    attributes:
+      label: Confidential-detail note
+      description: Do not publish confidential material. State that private follow-up is required instead.
+  - type: checkboxes
+    id: acknowledgment
+    attributes:
+      label: Acknowledgment
+      options:
+        - label: I understand that submitting this request does not grant permission.
+          required: true
